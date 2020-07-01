@@ -3,24 +3,20 @@
         <Title Text='Projects' />
         <div class="flex">
             <div class="mx-auto lg:flex mt-16">
-                <div class="flex">
-                    <div id="project" class="h-32 border-2 lg:mx-8 rounded-lg parent mx-auto lg:mt-0 mt-8" style="width: 20rem;">
-                        <div class="child w-full h-full flex" style="background-image: url('/img/lectio.svg');">
-                            <span class="my-auto mx-auto text-3xl text-white hidden hover:block relative" >LECTIO</span>
+                <div v-for="route in info" :key="route">
+                    <router-link :to="'/projects/'+ route.val">
+                        <div class="flex">
+                            <div id="project" class="h-32 border-2 lg:mx-8 rounded-lg parent mx-auto lg:mt-0 mt-8" style="width: 20rem;">
+                                <div class="child w-full h-full flex" :style="'background-image:' + 'url(img/' + route.val + '.svg);' ">
+                                    <span class="my-auto mx-auto text-3xl text-white hidden hover:block relative">{{route.name}}</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div id="project" class="h-32 border-2 lg:mx-8 mx-auto rounded-lg lg:mt-0 mt-8" style="width: 20rem">
-                    </div>
-                </div>
-                <div class="flex">
-                    <div id="project" class="h-32 border-2 lg:mx-8 mx-auto rounded-lg lg:mt-0 mt-8" style="width: 20rem">
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>
-    </div>
+     </div> 
 </template>
 <script>
 import Title from '@/components/Title.vue'
@@ -31,7 +27,22 @@ export default {
     },
     data() {
         return{
-            lectioToggle: false
+            lectioToggle: false,
+            info:
+            [
+                {
+                    val: "lectio",
+                    name: "Lectio"
+                },
+                {
+                    val: "prepri",
+                    name: "Prepri"
+                },
+                {
+                    val: "site",
+                    name: "My Portfolio"
+                },
+            ]
         }
     }
 }
