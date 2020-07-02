@@ -1,5 +1,5 @@
 <template>
-    <div class="py-20">
+    <div class="py-10">
         <Title Text='Projects' />
         <div class="flex">
             <div class="mx-auto lg:flex mt-16">
