@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-blue-500 flex text-5xl" style="font-family:'Lobster">
+        <div class="text-blue-500 flex text-4xl lg:text-5xl" style="font-family:'Lobster">
             <span class="mx-auto">{{Text}}</span>
         </div>
         <div class="flex">
@@ -12,6 +12,6 @@
 <script>
 export default {
     name: 'Title',
-    props: ['Text']
+    props: ['Text', 'mobile']
 }
 </script>

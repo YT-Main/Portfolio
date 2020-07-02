@@ -11,7 +11,7 @@
                 "text":"Devpost",
                 "link": "https://devpost.com/software/lectio"
             },
-            "TechnologyUsed":[
+            "TechnologiesUsed":[
                 "Vue.js",
                 "Chart.js",
                 "JavaScript",
@@ -33,7 +33,7 @@
             },
             "TechnologiesUsed":[
                 "Vue.js",
-                "TailwindCSS",
+                "Tailwind.CSS",
                 "Axios",
                 "JavaScript"
             ]
@@ -41,8 +41,8 @@
         {
             "text": "My Portfolio Website",
             "Media":{
-                "type": "NA",
-                "link": ""
+                "type": "img",
+                "link": "site-demo.gif"
             },
             "description": " is a website used for displaying work and getting in contact with potential clients. It hosts all of my newest can coolest projects as well as shows off my abilities.",
             "link":{
@@ -51,7 +51,7 @@
             },
             "TechnologiesUsed":[
                 "Vue.js",
-                "TailwindCSS",
+                "Tailwind.CSS",
                 "JavaScript"
             ]
         }

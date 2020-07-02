@@ -1,7 +1,7 @@
 <template>
     <div style="height:47.5vh">
         <div class="w-full bg-blue-500" style="height:30vh">
-            <span class="absolute w-full text-center text-white lg:text-6xl text-5xl">Hey, I'm Yash</span> 
+            <h1 class="absolute w-full text-center text-white lg:text-6xl text-4xl">Hey, I'm Yash Trivedi</h1> 
             <div class="w-full flex">
                 <span class="mx-auto flex" style="padding-top:12vh">
                     <svg height="30vh" viewBox="0 0 246 257" fill="none" xmlns="http://www.w3.org/2000/svg">

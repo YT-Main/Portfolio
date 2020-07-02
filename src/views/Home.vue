@@ -1,7 +1,7 @@
 <template>
   <div class="home m-0">
-    <div class="h-12 bg-blue-500" id="menu">
-      <nav class="float-right items-center h-12 flex list-none lg:pr-4">
+    <div class="h-12 bg-blue-500 w-screen lg:w-auto flex" id="menu">
+      <nav class="float-right mx-auto lg:mx-0 items-center h-12 flex list-none lg:pr-4">
         <li class="py-3 px-4 hover:bg-white hover:text-blue-500 text-white transition duration-300 ease-in-out" @click="scroll('projects')">Projects</li>
         <li class="py-3 px-4 hover:bg-white hover:text-blue-500 text-white transition duration-300 ease-in-out" @click="scroll('about')">About</li>
         <li class="py-3 px-4 hover:bg-white hover:text-blue-500 text-white transition duration-300 ease-in-out" @click="scroll('contact')">Contact Me</li>
