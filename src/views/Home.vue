@@ -19,6 +19,7 @@
     <About id="about" />
     <Projects id="projects"/>
     <ContactForm id="contact"/>
+    <Footer />
   </div>
 </template>
 
@@ -27,7 +28,7 @@ import Intro from '@/views/Intro.vue'
 import About from '@/views/About.vue'
 import Projects from '@/views/Projects.vue'
 import ContactForm from '@/views/ContactForm.vue'
-
+import Footer from '@/views/Footer.vue'
 
 export default {
   name: 'Home',
@@ -35,7 +36,8 @@ export default {
     Intro,
     About,
     Projects,
-    ContactForm
+    ContactForm,
+    Footer
   },
   methods:{
     animate: function(elem, style, unit, from, to, time, prop) {

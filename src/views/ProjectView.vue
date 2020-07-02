@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div class=" overflow-hidden">
+        <router-link to="/">
+            <img class="absolute ml-4 mt-4 hidden lg:block" src="/img/back.svg">
+        </router-link>
         <Title class="mt-8" :mobile='true' :Text='info.text' />
-
         <div class="w-screen flex">
             <div v-if="info.Media.type === 'NA'" class="bg-gray-300 mx-auto mt-8 flex text-xl hover:text-6xl" style="height: 25rem; width: 45rem;">
                 <span class="my-auto mx-auto "> Media Demo Comming Soon </span>
@@ -18,12 +20,12 @@
         </div>
         <div class="lg:w-screen flex mt-8">
             <div class="xl:flex mx-auto">
-                <div class="mx-auto lg:px-16 text-2xl">
+                <div class="mx-auto lg:px-16 text-2xl px-4">
                     <span style="font-family:'Lobster" class="text-3xl text-blue-500 "> {{info.text}} </span>{{info.description}}
                 </div>
                 <div class=" flex">
-                    <div class="lg:px-16 text-2xl" >
-                        <span v-for="tech in info.TechnologiesUsed" :key="tech" class="py-2 px-4 text-xl rounded-full bg-gray-800 mx-2" :class="{'bg-green-500': tech==='Vue.js', 'bg-teal-300': tech==='Tailwind.CSS', 'text-white': tech!='Tailwind.CSS' && tech!='JavaScript' && tech!='Chart.js', 'bg-red-700': tech==='Axios', 'bg-yellow-500': tech==='JavaScript', 'bg-red-300': tech==='Chart.js', 'bg-green-800': tech==='MongoDB',}">{{tech}}</span>
+                    <div class="lg:px-16 text-2xl block lg:flex" >
+                        <div v-for="tech in info.TechnologiesUsed" :key="tech" class="my-auto py-2 px-4 text-xl rounded-full bg-gray-800 mx-2 my-2 inline-block" :class="{'bg-green-500': tech==='Vue.js', 'bg-teal-300': tech==='Tailwind.CSS', 'text-white': tech!='Tailwind.CSS' && tech!='JavaScript' && tech!='Chart.js', 'bg-red-700': tech==='Axios', 'bg-yellow-500': tech==='JavaScript', 'bg-red-300': tech==='Chart.js', 'bg-green-800': tech==='MongoDB',}"><span class="mx-auto">{{tech}}</span></div>
                     </div>
                 </div>
             </div>
