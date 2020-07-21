@@ -12,6 +12,8 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
+    "firebase-tools": "^8.4.3",
+    "heroicons": "^0.3.6",
     "pageclip": "^1.0.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",

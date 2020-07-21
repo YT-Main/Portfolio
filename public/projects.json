@@ -3,14 +3,20 @@
         {
             "text": "Lectio",
             "Media": {
-                "type": "NA",
-                "link": ""
+                "type": "img",
+                "link": "lectioweb.png"
             },
-            "description": " is a platform made to help individuals with dislexia and/or speach impediments. Using speech recognition technology it tracks you while you read and then trtaining you on sound which you find diffiult. V0.1 was made at the PCHacks Hackathon in 2019 (where it won first place) which support for web and Amazon Alexa; with V1.0 currently under developement for web, mobile, Google Home, and Amazon Alexa.",
-            "link":{
-                "text":"Devpost",
-                "link": "https://devpost.com/software/lectio"
-            },
+            "description": " is a platform made to help individuals with dyslexia and/or speech impediments. Using speech recognition technology that tracks you while you read and then training you on sounds that you find difficult. V0.1 was made at the PCHacks Hackathon in 2019 (where it won first place) which supports web and Amazon Alexa. V1.0 is currently under development for web, mobile, Google Home, and Amazon Alexa.",
+            "link":[
+                    {
+                        "text":"Devpost",
+                        "link": "https://devpost.com/software/lectio"
+                    },
+                    {
+                        "text":"Website",
+                        "link": "https://lectioplatform.web.app/"
+                    }
+                ],
             "TechnologiesUsed":[
                 "Vue.js",
                 "Chart.js",
@@ -26,11 +32,13 @@
                 "type": "NA",
                 "link": ""
             },
-            "description": " is a platform made to help individuals with dyslexia and/or speech impediments. Using speech recognition technology tracks you while you read and then train you on the sounds which you find difficult. V0.1 was made at the PCHacks Hackathon in 2019 (where it won first place) which supports web and Amazon Alexa; with V1.0 currently under development for web, mobile, Google Home, and Amazon Alexa.",
-            "link": {
-                "text": "Vist Our Website",
-                "link": "https://prepri.app"
-            },
+            "description": " is a revolutionary learning platform that merges convenience for administrators with effective delivery for students. Prepri is perfect for any corporate or NGO setting allowing for quick and effective information transfer, certification training, and/or onboarding. Prepri was created for the TechUnderTwenty Cup where they were connected with current clients.",
+            "link": [
+                {
+                    "text": "Vist Our Website",
+                    "link": "https://prepri.app"
+                }
+            ],
             "TechnologiesUsed":[
                 "Vue.js",
                 "Tailwind.CSS",
@@ -44,11 +52,13 @@
                 "type": "img",
                 "link": "site-demo.gif"
             },
-            "description": " is a website used for displaying work and getting in contact with potential clients. It hosts all of my newest can coolest projects as well as shows off my abilities.",
-            "link":{
-                "text": "Go Home",
-                "link": "/"
-            },
+            "description": " is a website used for displaying work and getting in contact with potential clients. It hosts all of my newest and coolest projects as well as shows off my abilities.",
+            "link":[
+                {
+                    "text": "Go Home",
+                    "link": "/"
+                }
+            ],
             "TechnologiesUsed":[
                 "Vue.js",
                 "Tailwind.CSS",

@@ -8,15 +8,17 @@
             <div v-if="info.Media.type === 'NA'" class="bg-gray-300 mx-auto mt-8 flex text-xl hover:text-6xl" style="height: 25rem; width: 45rem;">
                 <span class="my-auto mx-auto "> Media Demo Comming Soon </span>
             </div>
-            <img v-if="info.Media.type ==='img'" :src="'/img/' + info.Media.link" class="bg-gray-300 mx-auto mt-8 text-xl hover:text-6xl" />
+            <img v-if="info.Media.type ==='img'" :src="'/img/' + info.Media.link" class="bg-gray-300 mx-auto mt-8 text-xl hover:text-6xl" style="height: 25rem; width: 45rem;"/>
         </div>
         <div class="w-screen flex">
             <router-link v-if="info.link.link === '/'" to="/" class="p-2 lg:p-4 rounded-lg bg-blue-500 mx-auto mt-4 text-white text-xl hover:bg-white hover:text-blue-500 border-2 border-blue-500 transition duration-200 ease-in-out">
                 {{info.link.text}}
             </router-link>
-            <a v-if="info.link.link != '/'" :href="info.link.link" class="p-2 lg:p-4 mt-4 rounded-lg mx-auto bg-blue-500 text-white text-xl hover:bg-blue-700 transition duration-200 ease-in-out">
-                {{info.link.text}}
-            </a>
+            <div v-else v-for="links in info.link" :key="links" class="w-full flex">
+                <a :href="links.link" class="p-2 lg:p-4 mt-4 rounded-lg mx-auto bg-blue-500 text-white text-xl hover:bg-blue-700 transition duration-200 ease-in-out">
+                    {{links.text}}
+                </a>
+            </div>
         </div>
         <div class="lg:w-screen flex mt-8">
             <div class="xl:flex mx-auto">
